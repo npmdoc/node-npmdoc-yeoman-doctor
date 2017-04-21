@@ -1,0 +1,599 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >yeoman-doctor (v2.1.0)</a>
+</h1>
+<h4>Detect potential issues with users system that could prevent Yeoman from working correctly</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.yeoman-doctor">module yeoman-doctor</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.yeoman-doctor.yeoman-doctor">
+            function <span class="apidocSignatureSpan"></span>yeoman-doctor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.</span>bowerrc_home</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.</span>global_config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.</span>message</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.</span>node_path</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.</span>node_version</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.</span>npm_version</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.</span>yo_rc_home</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.yeoman-doctor.bowerrc_home">module yeoman-doctor.bowerrc_home</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.yeoman-doctor.bowerrc_home.verify">
+            function <span class="apidocSignatureSpan">yeoman-doctor.bowerrc_home.</span>verify
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.bowerrc_home.</span>errors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">yeoman-doctor.bowerrc_home.</span>bowerrcPath</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">yeoman-doctor.bowerrc_home.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.yeoman-doctor.global_config">module yeoman-doctor.global_config</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.yeoman-doctor.global_config.verify">
+            function <span class="apidocSignatureSpan">yeoman-doctor.global_config.</span>verify
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.global_config.</span>errors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">yeoman-doctor.global_config.</span>configPath</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">yeoman-doctor.global_config.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.yeoman-doctor.message">module yeoman-doctor.message</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.yeoman-doctor.message.get">
+            function <span class="apidocSignatureSpan">yeoman-doctor.message.</span>get
+            <span class="apidocSignatureSpan">(message, data)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.yeoman-doctor.node_path">module yeoman-doctor.node_path</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.yeoman-doctor.node_path.verify">
+            function <span class="apidocSignatureSpan">yeoman-doctor.node_path.</span>verify
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.node_path.</span>errors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">yeoman-doctor.node_path.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.yeoman-doctor.node_version">module yeoman-doctor.node_version</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.yeoman-doctor.node_version.verify">
+            function <span class="apidocSignatureSpan">yeoman-doctor.node_version.</span>verify
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.node_version.</span>errors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">yeoman-doctor.node_version.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.yeoman-doctor.npm_version">module yeoman-doctor.npm_version</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.yeoman-doctor.npm_version.verify">
+            function <span class="apidocSignatureSpan">yeoman-doctor.npm_version.</span>verify
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.npm_version.</span>errors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">yeoman-doctor.npm_version.</span>OLDEST_NPM_VERSION</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">yeoman-doctor.npm_version.</span>description</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.yeoman-doctor.yo_rc_home">module yeoman-doctor.yo_rc_home</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.yeoman-doctor.yo_rc_home.verify">
+            function <span class="apidocSignatureSpan">yeoman-doctor.yo_rc_home.</span>verify
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">yeoman-doctor.yo_rc_home.</span>errors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">yeoman-doctor.yo_rc_home.</span>description</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">yeoman-doctor.yo_rc_home.</span>yorcPath</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.yeoman-doctor" id="apidoc.module.yeoman-doctor">module yeoman-doctor</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.yeoman-doctor.yeoman-doctor" id="apidoc.element.yeoman-doctor.yeoman-doctor">
+        function <span class="apidocSignatureSpan"></span>yeoman-doctor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">yeoman-doctor = function () {
+  var errCount = 0;
+
+  console.log(&#x27;\n&#x27; + chalk.underline.blue(&#x27;Yeoman Doctor&#x27;));
+  console.log(&#x27;Running sanity checks on your system\n&#x27;);
+
+  eachAsync(objectValues(rules), function (rule, i, cb) {
+    rule.verify(function (err) {
+      console.log((err ? symbols.error : symbols.success) + &#x27; &#x27; + rule.description);
+
+      if (err) {
+        errCount++;
+        console.log(err);
+      }
+
+      cb();
+    });
+  }, function () {
+    if (errCount === 0) {
+      console.log(chalk.green(&#x27;\nEverything looks all right!&#x27;));
+    } else {
+      console.log(chalk.red(&#x27;\nFound potential issues on your machine :(&#x27;));
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.yeoman-doctor.bowerrc_home" id="apidoc.module.yeoman-doctor.bowerrc_home">module yeoman-doctor.bowerrc_home</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.yeoman-doctor.bowerrc_home.verify" id="apidoc.element.yeoman-doctor.bowerrc_home.verify">
+        function <span class="apidocSignatureSpan">yeoman-doctor.bowerrc_home.</span>verify
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">verify = function (cb) {
+  fs.exists(this.bowerrcPath, function (exists) {
+    cb(exists ? errors.fileExists() : null);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.yeoman-doctor.global_config" id="apidoc.module.yeoman-doctor.global_config">module yeoman-doctor.global_config</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.yeoman-doctor.global_config.verify" id="apidoc.element.yeoman-doctor.global_config.verify">
+        function <span class="apidocSignatureSpan">yeoman-doctor.global_config.</span>verify
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">verify = function (cb) {
+  if (!fs.existsSync(this.configPath)) {
+    cb(null);
+    return;
+  }
+
+  try {
+    JSON.parse(fs.readFileSync(this.configPath, &#x27;utf8&#x27;));
+  } catch (err) {
+    if (err instanceof SyntaxError) {
+      cb(errors.syntax(err, this.configPath));
+      return;
+    }
+
+    cb(errors.misc(this.configPath));
+    return;
+  }
+
+  cb(null);
+  return;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.yeoman-doctor.message" id="apidoc.module.yeoman-doctor.message">module yeoman-doctor.message</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.yeoman-doctor.message.get" id="apidoc.element.yeoman-doctor.message.get">
+        function <span class="apidocSignatureSpan">yeoman-doctor.message.</span>get
+        <span class="apidocSignatureSpan">(message, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (message, data) {
+  var fileTemplate = fs.readFileSync(path.join(__dirname, &#x27;messages&#x27;, message + &#x27;.twig&#x27;), &#x27;utf8&#x27;);
+  return Twig.twig({data: fileTemplate}).render(data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var message = require(&#x27;../message&#x27;);
+
+exports.description = &#x27;No .bowerrc file in home directory&#x27;;
+
+var errors = exports.errors = {
+  fileExists: function () {
+    var rm = process.platform === &#x27;win32&#x27; ? &#x27;del&#x27; : &#x27;rm&#x27;;
+    return message.<span class="apidocCodeKeywordSpan">get</span>(&#x27;bowerrc-home-file-exists&#x27;, {
+      bowerrc: &#x27;.bowerrc&#x27;,
+      command: rm + &#x27; ~/.bowerrc&#x27;
+    });
+  }
+};
+
+exports.bowerrcPath = path.join(userHome, &#x27;.bowerrc&#x27;);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.yeoman-doctor.node_path" id="apidoc.module.yeoman-doctor.node_path">module yeoman-doctor.node_path</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.yeoman-doctor.node_path.verify" id="apidoc.element.yeoman-doctor.node_path.verify">
+        function <span class="apidocSignatureSpan">yeoman-doctor.node_path.</span>verify
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">verify = function (cb) {
+  if (process.env.NODE_PATH === undefined) {
+    cb(null);
+    return;
+  }
+
+  var nodePaths = (process.env.NODE_PATH || &#x27;&#x27;).split(path.delimiter).map(fixPath);
+
+  childProcess.exec(&#x27;npm -g root --silent&#x27;, function (err, stdout) {
+    if (err) {
+      cb(errors.npmFailure());
+      return;
+    }
+
+    var npmRoot = fixPath(stdout);
+
+    if (nodePaths.indexOf(npmRoot) &#x3c; 0) {
+      cb(errors.pathMismatch(npmRoot));
+      return;
+    }
+
+    cb(null);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.yeoman-doctor.node_version" id="apidoc.module.yeoman-doctor.node_version">module yeoman-doctor.node_version</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.yeoman-doctor.node_version.verify" id="apidoc.element.yeoman-doctor.node_version.verify">
+        function <span class="apidocSignatureSpan">yeoman-doctor.node_version.</span>verify
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">verify = function (cb) {
+  cb(semver.lt(process.version, OLDEST_NODE_VERSION) ? errors.oldNodeVersion() : null);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.yeoman-doctor.npm_version" id="apidoc.module.yeoman-doctor.npm_version">module yeoman-doctor.npm_version</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.yeoman-doctor.npm_version.verify" id="apidoc.element.yeoman-doctor.npm_version.verify">
+        function <span class="apidocSignatureSpan">yeoman-doctor.npm_version.</span>verify
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">verify = function (cb) {
+  binVersionCheck(&#x27;npm&#x27;, &#x27;&#x3e;=&#x27; + exports.OLDEST_NPM_VERSION, function (err) {
+    cb(err ? errors.oldNpmVersion() : null);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.yeoman-doctor.yo_rc_home" id="apidoc.module.yeoman-doctor.yo_rc_home">module yeoman-doctor.yo_rc_home</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.yeoman-doctor.yo_rc_home.verify" id="apidoc.element.yeoman-doctor.yo_rc_home.verify">
+        function <span class="apidocSignatureSpan">yeoman-doctor.yo_rc_home.</span>verify
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">verify = function (cb) {
+  fs.exists(this.yorcPath, function (exists) {
+    cb(exists ? errors.fileExists() : null);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
